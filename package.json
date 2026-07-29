@@ -1,0 +1,22 @@
+{
+  "name": "queuectl",
+  "version": "1.0.0",
+  "description": "CLI-based background job queue system with persistent storage, retry, and dead letter queue",
+  "main": "queuectl.js",
+  "bin": {
+    "queuectl": "./queuectl.js"
+  },
+  "scripts": {
+    "start": "node queuectl.js",
+    "test": "node test-scenarios.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "commander": "^12.1.0",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
